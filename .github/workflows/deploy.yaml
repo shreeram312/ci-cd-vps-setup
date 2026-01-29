@@ -19,6 +19,6 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd /ci-cd-vps-setup
+            cd ci-cd-vps-setup/
             git pull
             docker compose up -d --build
